@@ -1,76 +1,72 @@
 # Alien-invasion-game-with-Pygame
 
-Aquí tienes una descripción detallada y estructurada para tu repositorio en GitHub basado en el proyecto que creaste:
+**Alien Invasion** is a game developed in **Python** using the **Pygame** library, where the player controls a spaceship to shoot and defend against waves of invading aliens. This project demonstrates how to structure a basic 2D game and is ideal for anyone looking to learn or practice game development skills.
+
+## Project Structure  
+
+The project is organized as follows:  
+
+- **`alien_invasion.py`**: The main file that initializes the game. It sets up Pygame, creates the main game objects, and runs the main game loop.  
+
+- **`alien.py`**: Defines the **Alien** class, representing the enemies in the game. It includes the logic for alien movement and behavior.  
+
+- **`bullet.py`**: Contains the **Bullet** class, which defines the bullets shot by the player’s spaceship. Handles their creation, position, and removal when they exit the screen or hit an alien.  
+
+- **`button.py`**: Defines the **Button** class, used to create interactive buttons like the start button in the game menus.  
+
+- **`character.py`**: Represents the player’s spaceship. It includes logic for movement and interaction with other game elements.  
+
+- **`game_functions.py`**: A module that centralizes key game functions, such as collision detection, screen updates, and player event handling (e.g., key presses or mouse clicks).  
+
+- **`game_stats.py`**: Manages game statistics such as score, remaining lives, and game state (active, paused, etc.).  
+
+- **`settings.py`**: Contains the **Settings** class, defining global game configurations like screen size, spaceship speed, alien speed, and bullet behavior. This makes it easy to tweak game properties without modifying other files.  
+
+- **`scoreboard.py`**: Handles the logic for displaying player stats on the screen, including scores, levels, and high scores.  
+
+- **Resource Files (Images and Text)**:  
+  - **Images (`*.png`)**: Includes graphics for aliens, the player’s spaceship, bullets, stars, and more, bringing the game to life.  
+  - **`stats.txt`**: A file used to store persistent data, such as the highest score achieved in previous game sessions.  
 
 ---
 
-# Alien Invasion Game  
+## Features  
 
-**Alien Invasion** es un juego desarrollado en **Python** utilizando la biblioteca **Pygame**, donde el jugador controla una nave que dispara balas para defenderse de oleadas de alienígenas. Este proyecto está diseñado para mostrar cómo estructurar un juego 2D básico y es ideal para quienes buscan aprender o practicar habilidades de desarrollo de videojuegos.
-
-## Estructura del Proyecto  
-
-El proyecto está organizado de la siguiente manera:  
-
-- **`alien_invasion.py`**: El archivo principal que inicializa el juego. Configura Pygame, crea las instancias principales de los objetos del juego y ejecuta el bucle principal.  
-
-- **`alien.py`**: Define la clase **Alien**, que representa los enemigos en el juego. Contiene la lógica para el movimiento de los alienígenas y su comportamiento dentro del juego.  
-
-- **`bullet.py`**: Contiene la clase **Bullet**, que define las balas disparadas por la nave del jugador. Maneja su creación, posición y eliminación cuando salen de la pantalla o impactan a los alienígenas.  
-
-- **`button.py`**: Define la clase **Button** para crear botones interactivos, como un botón de inicio, utilizados en los menús del juego.  
-
-- **`character.py`**: Representa la nave del jugador. Contiene la lógica para su movimiento y la interacción con otros elementos del juego.  
-
-- **`game_functions.py`**: Un módulo que centraliza funciones clave del juego, como la detección de colisiones, la actualización de la pantalla y la gestión de eventos del jugador (como teclas pulsadas o clics).  
-
-- **`game_stats.py`**: Maneja las estadísticas del juego, como el puntaje, las vidas restantes y el estado del juego (activo, pausado, etc.).  
-
-- **`settings.py`**: Contiene la clase **Settings**, que define las configuraciones globales del juego, como el tamaño de la pantalla, la velocidad de los alienígenas, la nave, y las balas. Facilita ajustar las propiedades del juego sin modificar otros archivos.  
-
-- **`scoreboard.py`**: Contiene la lógica para mostrar el puntaje del jugador en la pantalla, incluidos niveles, puntajes máximos y otras estadísticas relacionadas.  
-
-- **Archivos de recursos (imágenes y texto)**:  
-  - **Imágenes (`*.png`)**: Incluyen los gráficos para los alienígenas, la nave del jugador, balas, estrellas y más. Estas imágenes le dan vida al juego.  
-  - **`stats.txt`**: Archivo utilizado para almacenar datos persistentes, como el puntaje máximo alcanzado en sesiones anteriores del juego.  
+- **Interactive Gameplay**: Control the spaceship using the keyboard to dodge aliens and shoot bullets.  
+- **Statistics Tracking**: Displays scores, levels, and remaining lives.  
+- **Progressive Difficulty**: Alien speed increases as the player progresses, making the game more challenging.  
+- **Persistent Data**: Saves the highest score to `stats.txt`.  
+- **Interactive Menu**: Includes buttons to start or restart the game.  
 
 ---
 
-## Características  
+## Installation and Running the Game  
 
-- **Interactividad**: Controla la nave espacial con el teclado para esquivar alienígenas y disparar balas.  
-- **Estadísticas**: Muestra puntajes, niveles y vidas restantes.  
-- **Dificultad progresiva**: A medida que avanzas, los alienígenas se mueven más rápido, aumentando el reto.  
-- **Persistencia de datos**: Guarda el puntaje más alto en el archivo `stats.txt`.  
-- **Menú interactivo**: Usa botones para iniciar el juego o reiniciar una partida.  
+### Requirements  
+- **Python 3.10 or higher**  
+- **Pygame** library  
 
----
-
-## Instalación y Ejecución  
-
-### Requisitos  
-- **Python 3.10 o superior**  
-- Biblioteca **Pygame**  
-
-### Instrucciones  
-1. Clona este repositorio:  
+### Instructions  
+1. Clone this repository:  
    ```bash  
    git clone https://github.com/your-username/alien-invasion.git  
    cd alien-invasion  
    ```  
 
-2. Instala los módulos requeridos:  
+2. Install the required library:  
    ```bash  
    pip install pygame  
    ```  
 
-3. Ejecuta el juego:  
+3. Run the game:  
    ```bash  
    python alien_invasion.py  
    ```  
 
 ---
 
-## Contribución  
+## Contribution  
 
-Si deseas mejorar el juego o agregar nuevas características, siéntete libre de hacer un fork del proyecto y enviar un pull request.  
+If you’d like to improve the game or add new features, feel free to fork the project and submit a pull request.  
+
+--- 
